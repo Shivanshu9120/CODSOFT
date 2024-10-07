@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+/*headbar*/
+.headbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20vh;
+    background:linear-gradient(165deg,orange,rgb(251, 5, 182));
+}
+.headbar .anchor-nav,
+.headbar .center-nav,
+.headbar .button-nav{
+    flex: 1;
+}
+.headbar .anchor-nav{
+    display: flex;
+    padding-left: 10px;
+}
+.headbar  a{
+    font-size: 28px;
+    padding: 20px;
+    color: #fff;
+    border: 2px solid white;
+    border-top: 0;
+    border-bottom: 0;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.headbar  a:hover{
+    color: blue;
+}
+.headbar .center-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100px;
+}
+.headbar .center-nav p{
+    font-size: 22px;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+.headbar .center-nav p:hover{
+    color: blue;
+}
+.headbar .button-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button-nav button{
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    left: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.button-nav button:hover{
+    background: blue;
+    transform: scale(1.1);
+    border: 0;
+    outline: 0;
+}
+/*navbar*/
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20vh;
+}
+.navbar .right-nav{
+    flex: 1;
+}
+.navbar .left-nav{
+    flex: 0.5; 
+}
+.navbar .left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    padding: 10px;
+}
+.navbar .right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 24px;
+    /* padding: 10px; */
+}
+.navbar .right-nav a{
+    display: flex;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+}
+.navbar .right-nav a:hover{
+    background: rgb(232, 205, 5);
+}
+.navbar .right-nav input{
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: rgb(222, 220, 220);
+    color: #fff;
+    padding: 15px;
+    margin-left: 100px;
+}
+#search{
+    background: none;
+    transition: transform 0.3s;
+}
+#search:hover{
+    transform: scale(1.2);
+}
+/*top-display*/
+.top-display{
+    display: flex;
+    flex: 1;
+    background-image: url(images/header.webp);
+    height: 50vh;
+    padding: 0 20vh;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+.top-display .text-top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.top-display .text-top h1,
+.top-display .text-top h3,
+.top-display .text-top p,
+.top-display .text-top .btn{
+    color: #fff;
+    padding:5px;
+    padding-left: 40px;
+    position: relative;
+}
+.top-display .text-top h1::before,
+.top-display .text-top h3::before,
+.top-display .text-top p::before,
+.top-display .text-top .btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(90deg, orange, rgb(251, 5, 182));
+}
+.text-top h1{
+    font-size: 60px;
+}
+.text-top h3{
+    font-size: 30px;
+}
+.text-top p{
+    font-size: 18px;
+    width: 100vh;
+}
+.text-top .btn button{
+    padding: 5px;
+    height: 50px;
+    font-size: 16px;
+    margin-right: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid white;
+    background: transparent;
+    color: #fff;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+.text-top .btn button:hover{
+    background: linear-gradient(90deg,orange,rgb(251, 5, 182));
+    transform: scale(1.1);
+}
+/*bottom display*/
+.bottom-display{
+    display: flex;
+    height: 25vh;
+    padding: 0 20vh;
+    background: linear-gradient(90deg,orange,rgb(251, 5, 182));
+}
+.bottom-display .left,
+.bottom-display .center,
+.bottom-display .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-left: 0;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+}
+.bottom-display .left h2,
+.bottom-display .center h2,
+.bottom-display .right h2{
+    font-size: 28px;
+    padding: 10px;
+}
+.bottom-display .left p,
+.bottom-display .center p,
+.bottom-display .right p{
+    font-size: 18px;
+    padding: 10px;
+}
+/*about*/
+.about{
+    display: flex;
+    height: 50vh;
+    padding: 0 20vh;
+    margin-bottom: 30px;
+}
+.about .left-about,
+.about .right-about{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.about .left-about{
+    margin-top: 40px;
+    margin-right: 50px;
+}
+.about .left-about h1{
+    padding: 5px;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.about .left-about h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    width: 50%;
+    background:linear-gradient(90deg,orange,rgb(251, 5, 182)) ;
+}
+.about .left-about h4{
+    font-size: 22px;
+    margin-top: 10px;
+}
+.about .left-about p{
+    font-size: 24px;
+    padding-right: 100px;
+    line-height: 2rem;
+    margin-top: 10px;
+    color: gray;
+}
+.about .left-about button{
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(90deg,orange,rgb(247, 5, 130));
+}
+.about .left-about button:hover{
+    transform: scale(1.2);
+}
+.about .right-about img{
+    margin-left: 200px;
+}    
+/*services*/
+.services{
+    background: rgb(234, 234, 234);
+    height: 50vh;
+    padding: 0 20vh;
+}
+.services h1{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.services h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    width: 125px;
+    background: linear-gradient(90deg,orange,rgb(247, 5, 130));
+}
+.display{
+    display: flex;
+    margin-top: 40px;
+}
+.display .left-services,
+.display .center-services,
+.display .right-services{
+    flex: 1;
+    position: relative;
+}
+.display .left-services img,
+.display .center-services img,
+.display .right-services img{
+    height: 30vh;
+    width: 50vh;
+    border-radius: 10px;
+    box-shadow:0px 4px 4px 0px black;
+    
+}
+.display .left-services img:hover,
+.display .center-services img:hover,
+.display .right-services img:hover{
+    transform: scale(1.1);
+}
+.display .left-services button,
+.display .center-services button,
+.display .right-services button{
+    font-size: 18px;
+    padding: 20px;
+    height: 80px;
+    width: 300px;
+    align-items: center;
+    border: none;
+    z-index: 6;
+    position: absolute;
+    bottom: -10px;
+    right: 93px;
+    background: white;
+    box-shadow: 0px 4px 4px black;
+}
+button i {
+    background-color: purple;
+    color: white;
+    border-radius: 50%; /* Make the icon background a circle */
+    padding: 10px;
+    margin-right: 20px; /* Space between icon and text */
+    font-size: 18px;
+    box-shadow: 0px 4px 4px black;
+}
+
